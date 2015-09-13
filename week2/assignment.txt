@@ -1,0 +1,53 @@
+Prefixes
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#>
+
+
+1 - Display all countries and their capitals
+
+
+SELECT ?Country ?Capital  
+WHERE {  ?Country :has_capital ?Capital .}
+
+
+2 - Display all capitals of countries bordering the Caribbean sea
+
+SELECT ?Country ?Capital  
+WHERE {  
+	:Caribbean :borders ?Country .	
+	?Country :has_capital ?Capital .
+	}
+
+3 - Display all geolocations (only geolocations type)
+
+SELECT ?entity
+WHERE {
+  ?entity rdf:type ?type.
+  ?type rdfs:subClassOf* :Geolocation.
+}
+
+
+4 - Display all persons that are famous persons (subclass of persons)
+
+SELECT ?entity
+WHERE {
+  ?entity rdf:type :Famous_person.
+
+}
+
+
+5 - Display cities that contain the letter A
+
+SELECT ?capital
+ WHERE { ?country :has_capital  ?capital
+ FILTER regex(?capital,'^a','i')
+ }
+
+
+
+
+
