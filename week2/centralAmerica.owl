@@ -37,8 +37,8 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#borders -->
 
     <owl:ObjectProperty rdf:about="&central_america;borders">
-        <rdfs:range rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
-        <rdfs:domain rdf:resource="&central_america;OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33"/>
+        <rdfs:domain rdf:resource="&central_america;Bordering_sea"/>
+        <rdfs:range rdf:resource="&central_america;Country"/>
     </owl:ObjectProperty>
     
 
@@ -46,8 +46,8 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#born_in -->
 
     <owl:ObjectProperty rdf:about="&central_america;born_in">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502"/>
-        <rdfs:range rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdfs:range rdf:resource="&central_america;Country"/>
+        <rdfs:domain rdf:resource="&central_america;Person"/>
     </owl:ObjectProperty>
     
 
@@ -55,8 +55,8 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#has_capital -->
 
     <owl:ObjectProperty rdf:about="&central_america;has_capital">
-        <rdfs:range rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
-        <rdfs:domain rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdfs:range rdf:resource="&central_america;Capital"/>
+        <rdfs:domain rdf:resource="&central_america;Country"/>
     </owl:ObjectProperty>
     
 
@@ -64,8 +64,8 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#has_president -->
 
     <owl:ObjectProperty rdf:about="&central_america;has_president">
-        <rdfs:range rdf:resource="&central_america;OWLClass_6af23af6_2229_4b64_88ef_79247555f13c"/>
-        <rdfs:domain rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdfs:domain rdf:resource="&central_america;Country"/>
+        <rdfs:range rdf:resource="&central_america;President"/>
     </owl:ObjectProperty>
     
 
@@ -73,9 +73,9 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#located_in -->
 
     <owl:ObjectProperty rdf:about="&central_america;located_in">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_50083164_a5ad_4f4e_996b_b95f071ac7d9"/>
-        <rdfs:domain rdf:resource="&central_america;OWLClass_613a1deb_76c5_431c_a276_4fe3ebd89f75"/>
-        <rdfs:range rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdfs:range rdf:resource="&central_america;Country"/>
+        <rdfs:domain rdf:resource="&central_america;Mountain"/>
+        <rdfs:domain rdf:resource="&central_america;River"/>
     </owl:ObjectProperty>
     
 
@@ -95,7 +95,7 @@
 
     <owl:DatatypeProperty rdf:about="&central_america;OWLDataProperty_64e051bc_08ae_4dd0_acb4_34ef38933cf2">
         <rdfs:label xml:lang="nl">city_name</rdfs:label>
-        <rdfs:domain rdf:resource="&central_america;OWLClass_dc7b2749_5a2c_40b2_ab5a_288e49099cc4"/>
+        <rdfs:domain rdf:resource="&central_america;City"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -105,7 +105,7 @@
 
     <owl:DatatypeProperty rdf:about="&central_america;OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad">
         <rdfs:label xml:lang="nl">country_name</rdfs:label>
-        <rdfs:domain rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdfs:domain rdf:resource="&central_america;Country"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -114,7 +114,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#first_name -->
 
     <owl:DatatypeProperty rdf:about="&central_america;first_name">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502"/>
+        <rdfs:domain rdf:resource="&central_america;Person"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -123,7 +123,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#last_name -->
 
     <owl:DatatypeProperty rdf:about="&central_america;last_name">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502"/>
+        <rdfs:domain rdf:resource="&central_america;Person"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -132,7 +132,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#mountain_name -->
 
     <owl:DatatypeProperty rdf:about="&central_america;mountain_name">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_50083164_a5ad_4f4e_996b_b95f071ac7d9"/>
+        <rdfs:domain rdf:resource="&central_america;Mountain"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -141,7 +141,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#river_name -->
 
     <owl:DatatypeProperty rdf:about="&central_america;river_name">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_613a1deb_76c5_431c_a276_4fe3ebd89f75"/>
+        <rdfs:domain rdf:resource="&central_america;River"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -150,7 +150,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#sea_name -->
 
     <owl:DatatypeProperty rdf:about="&central_america;sea_name">
-        <rdfs:domain rdf:resource="&central_america;OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33"/>
+        <rdfs:domain rdf:resource="&central_america;Bordering_sea"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -167,88 +167,88 @@
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502 -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Bordering_sea -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502">
-        <rdfs:label xml:lang="nl">Person</rdfs:label>
+    <owl:Class rdf:about="&central_america;Bordering_sea">
+        <rdfs:label xml:lang="nl">Bordering_sea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&central_america;Geolocation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Capital -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d">
+    <owl:Class rdf:about="&central_america;Capital">
         <rdfs:label xml:lang="nl">Capital</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&central_america;OWLClass_dc7b2749_5a2c_40b2_ab5a_288e49099cc4"/>
+        <rdfs:subClassOf rdf:resource="&central_america;City"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_50083164_a5ad_4f4e_996b_b95f071ac7d9 -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#City -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_50083164_a5ad_4f4e_996b_b95f071ac7d9">
-        <rdfs:label xml:lang="nl">Mountain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&central_america;OWLClass_d2d50fe9_7c65_4f0d_8ec9_d9b4ebb61101"/>
+    <owl:Class rdf:about="&central_america;City">
+        <rdfs:label xml:lang="nl">City</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_613a1deb_76c5_431c_a276_4fe3ebd89f75 -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Country -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_613a1deb_76c5_431c_a276_4fe3ebd89f75">
-        <rdfs:label xml:lang="nl">River</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&central_america;OWLClass_d2d50fe9_7c65_4f0d_8ec9_d9b4ebb61101"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_6af23af6_2229_4b64_88ef_79247555f13c -->
-
-    <owl:Class rdf:about="&central_america;OWLClass_6af23af6_2229_4b64_88ef_79247555f13c">
-        <rdfs:label xml:lang="nl">President</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&central_america;OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_70efac68_2729_4962_bac3_3becbf4ba65d -->
-
-    <owl:Class rdf:about="&central_america;OWLClass_70efac68_2729_4962_bac3_3becbf4ba65d">
-        <rdfs:label xml:lang="nl">Famous_persons</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&central_america;OWLClass_1c29e3d4_b441_4f68_8224_9865307ae502"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb -->
-
-    <owl:Class rdf:about="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb">
+    <owl:Class rdf:about="&central_america;Country">
         <rdfs:label xml:lang="nl">Country</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33 -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Famous_persons -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33">
-        <rdfs:label xml:lang="nl">Bordering_sea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&central_america;OWLClass_d2d50fe9_7c65_4f0d_8ec9_d9b4ebb61101"/>
+    <owl:Class rdf:about="&central_america;Famous_persons">
+        <rdfs:label xml:lang="nl">Famous_persons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&central_america;Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_d2d50fe9_7c65_4f0d_8ec9_d9b4ebb61101 -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Geolocation -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_d2d50fe9_7c65_4f0d_8ec9_d9b4ebb61101">
+    <owl:Class rdf:about="&central_america;Geolocation">
         <rdfs:label xml:lang="nl">Geolocation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#OWLClass_dc7b2749_5a2c_40b2_ab5a_288e49099cc4 -->
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Mountain -->
 
-    <owl:Class rdf:about="&central_america;OWLClass_dc7b2749_5a2c_40b2_ab5a_288e49099cc4">
-        <rdfs:label xml:lang="nl">City</rdfs:label>
+    <owl:Class rdf:about="&central_america;Mountain">
+        <rdfs:label xml:lang="nl">Mountain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&central_america;Geolocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Person -->
+
+    <owl:Class rdf:about="&central_america;Person">
+        <rdfs:label xml:lang="nl">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#President -->
+
+    <owl:Class rdf:about="&central_america;President">
+        <rdfs:label xml:lang="nl">President</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&central_america;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#River -->
+
+    <owl:Class rdf:about="&central_america;River">
+        <rdfs:label xml:lang="nl">River</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&central_america;Geolocation"/>
     </owl:Class>
     
 
@@ -267,7 +267,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Belize -->
 
     <owl:NamedIndividual rdf:about="&central_america;Belize">
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">Belize</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;Belize_City"/>
     </owl:NamedIndividual>
@@ -277,7 +277,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Belize_City -->
 
     <owl:NamedIndividual rdf:about="&central_america;Belize_City">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
     </owl:NamedIndividual>
     
 
@@ -285,7 +285,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Caribbean -->
 
     <owl:NamedIndividual rdf:about="&central_america;Caribbean">
-        <rdf:type rdf:resource="&central_america;OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33"/>
+        <rdf:type rdf:resource="&central_america;Bordering_sea"/>
         <sea_name rdf:datatype="&xsd;string">Caribbean</sea_name>
         <borders rdf:resource="&central_america;Belize"/>
         <borders rdf:resource="&central_america;Costa_Rica"/>
@@ -301,7 +301,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Costa_Rica -->
 
     <owl:NamedIndividual rdf:about="&central_america;Costa_Rica">
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">Costa Rica</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;San_Jose"/>
     </owl:NamedIndividual>
@@ -311,7 +311,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#El_Salvador -->
 
     <owl:NamedIndividual rdf:about="&central_america;El_Salvador">
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">El Salvador</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;San_salvador"/>
     </owl:NamedIndividual>
@@ -321,8 +321,8 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Guatemala -->
 
     <owl:NamedIndividual rdf:about="&central_america;Guatemala">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">Guatemala</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;Guatemala"/>
     </owl:NamedIndividual>
@@ -332,7 +332,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Gulf_of_Mexico -->
 
     <owl:NamedIndividual rdf:about="&central_america;Gulf_of_Mexico">
-        <rdf:type rdf:resource="&central_america;OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33"/>
+        <rdf:type rdf:resource="&central_america;Bordering_sea"/>
         <sea_name rdf:datatype="&xsd;string">Gulf of Mexico</sea_name>
         <borders rdf:resource="&central_america;Mexico"/>
     </owl:NamedIndividual>
@@ -342,7 +342,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Honduras -->
 
     <owl:NamedIndividual rdf:about="&central_america;Honduras">
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">Honduras</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;Tegucigalpa"/>
     </owl:NamedIndividual>
@@ -352,7 +352,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Managua -->
 
     <owl:NamedIndividual rdf:about="&central_america;Managua">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
         <OWLDataProperty_64e051bc_08ae_4dd0_acb4_34ef38933cf2 rdf:datatype="&xsd;string"></OWLDataProperty_64e051bc_08ae_4dd0_acb4_34ef38933cf2>
     </owl:NamedIndividual>
     
@@ -361,7 +361,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Mexico -->
 
     <owl:NamedIndividual rdf:about="&central_america;Mexico">
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">Mexico</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;Mexico_City"/>
     </owl:NamedIndividual>
@@ -371,7 +371,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Mexico_City -->
 
     <owl:NamedIndividual rdf:about="&central_america;Mexico_City">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
     </owl:NamedIndividual>
     
 
@@ -379,7 +379,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Nicaragua -->
 
     <owl:NamedIndividual rdf:about="&central_america;Nicaragua">
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string"></OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;Managua"/>
         <has_president rdf:resource="&central_america;Ortega"/>
@@ -390,7 +390,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Ortega -->
 
     <owl:NamedIndividual rdf:about="&central_america;Ortega">
-        <rdf:type rdf:resource="&central_america;OWLClass_6af23af6_2229_4b64_88ef_79247555f13c"/>
+        <rdf:type rdf:resource="&central_america;President"/>
         <first_name rdf:datatype="&xsd;string">Daniel</first_name>
         <last_name rdf:datatype="&xsd;string">Ortega</last_name>
     </owl:NamedIndividual>
@@ -400,7 +400,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Pacific_ocean -->
 
     <owl:NamedIndividual rdf:about="&central_america;Pacific_ocean">
-        <rdf:type rdf:resource="&central_america;OWLClass_841e8ec3_1091_432a_9201_2a6d0d565e33"/>
+        <rdf:type rdf:resource="&central_america;Bordering_sea"/>
         <sea_name rdf:datatype="&xsd;string">Pacific Ocean</sea_name>
         <borders rdf:resource="&central_america;Belize"/>
         <borders rdf:resource="&central_america;Costa_Rica"/>
@@ -416,8 +416,8 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Panama -->
 
     <owl:NamedIndividual rdf:about="&central_america;Panama">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
-        <rdf:type rdf:resource="&central_america;OWLClass_829e2867_19bc_4f24_a65e_51d47e1690cb"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
+        <rdf:type rdf:resource="&central_america;Country"/>
         <OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad rdf:datatype="&xsd;string">Panama</OWLDataProperty_6ccfb55a_db2f_4884_929c_c05ad439e9ad>
         <has_capital rdf:resource="&central_america;Panama"/>
     </owl:NamedIndividual>
@@ -426,14 +426,16 @@
 
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Ruben_Dario -->
 
-    <owl:NamedIndividual rdf:about="&central_america;Ruben_Dario"/>
+    <owl:NamedIndividual rdf:about="&central_america;Ruben_Dario">
+        <rdf:type rdf:resource="&central_america;Famous_persons"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Salma_Hayek -->
 
     <owl:NamedIndividual rdf:about="&central_america;Salma_Hayek">
-        <rdf:type rdf:resource="&central_america;OWLClass_70efac68_2729_4962_bac3_3becbf4ba65d"/>
+        <rdf:type rdf:resource="&central_america;Famous_persons"/>
         <last_name rdf:datatype="&xsd;string">Hayek</last_name>
         <first_name rdf:datatype="&xsd;string">Salma</first_name>
         <born_in rdf:resource="&central_america;Mexico"/>
@@ -444,7 +446,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#San_Jose -->
 
     <owl:NamedIndividual rdf:about="&central_america;San_Jose">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
     </owl:NamedIndividual>
     
 
@@ -452,7 +454,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#San_salvador -->
 
     <owl:NamedIndividual rdf:about="&central_america;San_salvador">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
     </owl:NamedIndividual>
     
 
@@ -460,7 +462,7 @@
     <!-- http://www.semanticweb.org/chrispool/ontologies/2015/8/central_america#Tegucigalpa -->
 
     <owl:NamedIndividual rdf:about="&central_america;Tegucigalpa">
-        <rdf:type rdf:resource="&central_america;OWLClass_4eee9c18_ba7c_420c_a50c_937fd3be2f0d"/>
+        <rdf:type rdf:resource="&central_america;Capital"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
